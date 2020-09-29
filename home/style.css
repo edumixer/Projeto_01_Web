@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    background-color: aquamarine;
+    height: 50px;
+}
+
+ul li {
+    margin: 0;
+    display: inline-block;
+    margin-left: 50px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.background-inicial {
+    height: 540px;
+}
