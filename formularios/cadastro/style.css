@@ -1,0 +1,62 @@
+body {
+    margin: 0px;
+}
+
+.div-3{
+    padding-top: 100px;
+    background-color: #f0fff00c;
+    width: 100%;
+    height: 90%;
+    float: left;
+}
+.campo-formulario {
+    display: flex;
+    width: 300px;
+    position: relative;
+    left: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #CCC;
+    border-radius: 8px;
+    font-family: 'Arial';
+    padding: 15px;
+    outline: none;
+}
+.campo-formulario:hover{
+    border-color: blue;
+    outline: none;
+}
+.campo-errado {
+    display: flex;
+    width: 300px;
+    position: relative;
+    left: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #CCC;
+    border-radius: 8px;
+    font-family: 'Arial';
+    padding: 15px;
+    border-color: red;
+    outline: none;
+}
+
+.salvar {
+    border: 0;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #088a68;
+    position: relative;
+    left: 40%;
+    outline: none;
+}
+.salvar:hover {
+    background-color: #04B486;
+    outline: none;
+}
