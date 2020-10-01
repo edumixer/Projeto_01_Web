@@ -1,0 +1,134 @@
+body {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+h1 {
+    color: #0085FF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+label { 
+    margin-top: 1rem;
+    margin-bottom: 4px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 45px;
+}
+input {
+    width: 100%;
+    margin-top: .25rem;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    padding: 4px 1px;
+    margin-left: 25px;
+    color: #0085FF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.svg_email {
+    border: 0;
+    height: 20px;
+    position: absolute;
+}
+
+.campo-formulario {
+    display: flex;
+    width: 450px;               /* Tamanho da barra em baixo */
+    font-family: 'Arial';
+    font-size: 1em;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px black;
+}
+
+.campo-formulario:hover{
+    border-color: #0085FF;
+    outline: none;
+    transition: 0.4s;
+}
+.campo-errado {
+    display: flex;
+    width: 300px;
+    position: relative;
+    left: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px #CCC;
+    border-radius: 8px;
+    font-family: 'Arial';
+    padding: 15px;
+    border-color: red;
+    outline: none;
+}
+.salvar {
+    border: 0;
+    color: #fff;
+    width: 90px;
+    height: 40px;
+    background-color: #0085FF;
+    position: relative;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.salvar:hover {
+    background-color: #339dff;
+    outline: none;
+    transition: 0.4s;
+}
+.cadastrar {
+    border: 0;
+    background-color: transparent;
+    color: #0085FF;
+    width: 90px;
+    height: 40px;
+    position: relative;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: 700;
+}
+.cadastrar:hover {
+    color: #339dff;
+    outline: none;
+    transition: 0.4s;
+}
+.icone_email {
+    display: flex;
+    align-items: center;        /* Centralizando o icone */
+    position: relative;
+}
+.icone_cadeado {
+    display: flex;
+    align-items: center;        /* Centralizando o icone */
+    position: relative;
+}
+.svg_cadeado{ 
+    border: 0;
+    height: 20px;
+    position: absolute;
+    align-items: center;
+}
