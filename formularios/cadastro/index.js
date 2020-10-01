@@ -13,7 +13,6 @@ function fLocalEventosCLick() {
     $("#salvar-formulario").click(function() {
 
         fLocalValidaCampos("nome");
-        fLocalValidaCampos("sobrenome");
         fLocalValidaCampos("email");
         fLocalValidaCampos("senha");
         fLocalValidaCampos("confirma_senha");
@@ -22,7 +21,6 @@ function fLocalEventosCLick() {
         
         var aux = {};
         aux.nome = $("#nome").val();
-        aux.sobrenome = $("#sobrenome").val();
         aux.email = $("#email").val();
         aux.senha =  $("#senha").val();
         aux.confirma_senha =  $("#confirma_senha").val();
@@ -33,7 +31,7 @@ function fLocalEventosCLick() {
         
         if (fLocalValidaTodos()) {
             fLocalLimpaCampos();
-            window.location.href = "../home/index.html"
+            window.location.href = "../../home/index.html"
         } 
             
     });
@@ -55,9 +53,6 @@ function fLocalEventosCLick() {
         
         
         if(fLocalValidaCampos("nome") === false) {
-            return false;
-        } 
-        if (fLocalValidaCampos("sobrenome") === false) {
             return false;
         }
         if (fLocalValidaCampos("email") === false) {
@@ -96,14 +91,10 @@ function fLocalEventosCLick() {
 
     function fLocalLimpaCampos() {
         $("#nome").val("");
-        $("#sobrenome").val("");
         $("#email").val("");
         $("#senha").val("");
         $("#confirma_senha").val("");
     }
-    
-
-    
 });
 
 
