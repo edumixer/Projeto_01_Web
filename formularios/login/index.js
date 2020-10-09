@@ -32,11 +32,13 @@ function fLocalEventosCLick() {
         banco.setItem("dadosUsuarios", JSON.stringify(dados));
         
         if (fLocalValidaTodos()) {
-            fLocalLimpaCampos();
-            window.location.href = "../home/index.html"
+            fLocalLimpaCampos();            
         } 
-            
     });
+    $("#cadastrar-formulario").click(function () {
+        window.location.href = "../cadastro/index.html"
+    });        
+    
 }
     
     function fLocalValidaCampos(idCampo) {

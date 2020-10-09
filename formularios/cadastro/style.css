@@ -58,25 +58,13 @@ input {
     transition: 0.4s;
 }
 .campo-errado {
-    display: flex;
-    width: 300px;
-    position: relative;
-    left: 40%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: solid 1px #CCC;
-    border-radius: 8px;
-    font-family: 'Arial';
-    padding: 15px;
-    border-color: red;
-    outline: none;
+    border-bottom: solid 1px red;
+    
 }
 .salvar {
     border: 0;
     color: #fff;
-    width: 90px;
+    width: 130px;
     height: 40px;
     background-color: #0085FF;
     position: relative;
@@ -85,6 +73,7 @@ input {
     border-radius: 8px;
     margin-top: 35px;
     cursor: pointer;
+    margin-right: 340px;     /* Posicao para direita do botao */
 }
 .salvar:hover {
     background-color: #339dff;

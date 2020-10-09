@@ -65,20 +65,7 @@ input {
     transition: 0.4s;
 }
 .campo-errado {
-    display: flex;
-    width: 300px;
-    position: relative;
-    left: 40%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: solid 1px #CCC;
-    border-radius: 8px;
-    font-family: 'Arial';
-    padding: 15px;
     border-color: red;
-    outline: none;
 }
 .salvar {
     border: 0;
@@ -131,4 +118,7 @@ input {
     height: 20px;
     position: absolute;
     align-items: center;
+}
+.botoes {
+    margin-right: 290px;
 }

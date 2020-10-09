@@ -31,9 +31,10 @@ function fLocalEventosCLick() {
         
         if (fLocalValidaTodos()) {
             fLocalLimpaCampos();
-            window.location.href = "../../home/index.html"
-        } 
-            
+            window.location.href = "../login/index.html"
+        }
+
+        return false;
     });
 }
     
