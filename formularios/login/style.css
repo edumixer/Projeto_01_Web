@@ -5,6 +5,43 @@ body {
     flex-flow: column;
     align-items: center;
 }
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: #007bff;
+}
+
+.navbar{
+    background: #fff;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.nav-link{
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
 h1 {
     color: #0085FF;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -96,12 +133,13 @@ input {
     border-radius: 8px;
     cursor: pointer;
     margin-left: 5px;
-    font-weight: 700;
+    font-weight: 700;    
 }
 .cadastrar:hover {
     color: #339dff;
     outline: none;
     transition: 0.4s;
+    text-decoration: none;
 }
 .icone_email {
     display: flex;

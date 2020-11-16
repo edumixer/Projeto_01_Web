@@ -1,12 +1,13 @@
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQiyNJ7oNW8MJ6fS9oKSkEv33ycw0zUHE&callback=initMap" async defer ></script>
+        <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-
         <section id="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
@@ -19,20 +20,23 @@
                       <a class="nav-link" href="#">Menu</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" href="#about">Sobre Nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Serviços</a>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Equipe</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Sobre Nós</a>
+                        <a class="nav-link" href="#services">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                      </li>
+                        <a class="nav-link" href="#team">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                    <li class="nav-login">
+                        <a class="nav-link" href="../formularios/login/index.html">Login</a>
+                    </li>
                   </ul>
                 </div>
               </nav>
@@ -47,13 +51,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                         <img class="d-block img-fluid" src="images/slide1.jpg">
+                         <img class="d-block img-fluid" src="images/cyber.jpg">
                             <div class="carousel-caption">
                                 <h5> Bem Vindo </h5>
                             </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block img-fluid" src="images/slide2.jpg">
+                        <img class="d-block img-fluid" src="images/euro.jpg">
                             <div class="carousel-caption">
                                 <h5> Bem Vindo 2 </h5>
                             </div>
@@ -109,259 +113,264 @@
             </div>
         </section>
 
-            <section id="services">
-                <div class="container">
-                    <h1> Nossos Serviços </h1>
-                    <div class="row services">
-                        <div class="col-md-3 text-center">
-                            <div class="icon">
-                              <i class="fa fa-desktop"></i>
-                            </div>
-                            <h4> Web Development </h4>
-                            <p>Conteudo a ser escrito representando as 
-                              informações da empresa e dos desenvolvedores.</p>
-                        </div>
-                        <div class="col-md-3 text-center">
-                          <div class="icon">
-                            <i class="fa fa-tablet"></i>
-                          </div>
-                          <h4> App Development </h4>
-                          <p>Conteudo a ser escrito representando as 
-                            informações da empresa e dos desenvolvedores.</p>
-                      </div>
-                      <div class="col-md-3 text-center">
+        <section id="services">
+            <div class="container">
+                <h1> Nossos Serviços </h1>
+                <div class="row services">
+                    <div class="col-md-3 text-center">
                         <div class="icon">
-                          <i class="fa fa-line-chart"></i>
+                            <i class="fa fa-twitch"></i>
                         </div>
-                        <h4> Digital Marketing </h4>
-                        <p>Conteudo a ser escrito representando as 
-                          informações da empresa e dos desenvolvedores.</p>
+                        <h4> Streamers da Twitch </h4>
+                        <p>Os tops 5 maiores streamers do Brasil, utilizam nossos
+                        produtos para ter um melhor desempenho nos jogos e ser os melhores.</p>
                     </div>
                     <div class="col-md-3 text-center">
-                      <div class="icon">
-                        <i class="fa fa-paint-brush"></i>
-                      </div>
-                      <h4> Graphics Designing </h4>
-                      <p>Conteudo a ser escrito representando as 
-                        informações da empresa e dos desenvolvedores.</p>
-                  </div>
+                        <div class="icon">
+                            <i class="fa fa-headphones"></i>
+                        </div>
+                        <h4> HeadSets </h4>
+                        <p>Aqui você encontrará Headsets como: Hyperx, Razer, C3tech, Xuxa
+                        Krom-Kayle, Logitech, Redragon. Todos com a ultima tecnologia: 7.1.</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <i class="fa fa-gamepad"></i>
+                        </div>
+                        <h4> Joysticks </h4>
+                        <p>Nos temos os melhores Joysticks do mundo. A SmartCode proporciona para voce
+                        Redragon, Hyperx e muito mais.</p>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="icon">
+                            <i class="fa fa-tv"></i>
+                        </div>
+                        <h4> Monitores </h4>
+                        <p>Aqui você encontrará também os melhores e mais tecnologicos monitores da face da Terra.
+                        Dentre eles: 60hz, 144hz, 240hz e monitor da xuxa.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="team">
-                <div class="container">
-                    <h1> Nosso Time </h1>
-                    <div class="row">
-                        <div class="col-md-3 profile-pic text-center">
-                            <div class="img-box">
-                                <img src="images/time1.jpg" class="img-responsive">
-                                    <ul>
-                                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                        <a href="#"><li><i class="fa fa-instagram"></i></li></a>
-                                    </ul>
-                            </div>
-                            <h2> Jeff Bezos </h2>
-                            <h3> Dono Amazon </h3>
-                            <p> Fundador Amazon </p>
-                        </div>
-                        <div class="col-md-3 profile-pic text-center">
-                          <div class="img-box">
-                              <img src="images/time2.jpg" class="img-responsive">
-                                  <ul>
-                                      <a href="#"><li><i class="fa fa-facebook"></i></li></a>
-                                      <a href="#"><li><i class="fa fa-twitter"></i></li></a>
-                                      <a href="#"><li><i class="fa fa-instagram"></i></li></a>
-                                  </ul>
-                          </div>
-                          <h2> Mark Zuckerberg </h2>
-                          <h3> Dono Facebook </h3>
-                          <p> Fundador Facebook </p>
-                      </div>
-                      <div class="col-md-3 profile-pic text-center">
+        <section id="team">
+            <div class="container">
+                <h1> Nosso Time </h1>
+                <div class="row">
+                    <div class="col-md-3 profile-pic text-center">
                         <div class="img-box">
-                            <img src="images/time3.png" class="img-responsive">
+                            <img src="images/ramon.png" class="img-responsive">
                                 <ul>
                                     <a href="#"><li><i class="fa fa-facebook"></i></li></a>
                                     <a href="#"><li><i class="fa fa-twitter"></i></li></a>
                                     <a href="#"><li><i class="fa fa-instagram"></i></li></a>
                                 </ul>
                         </div>
-                        <h2> Elon Musk </h2>
-                        <h3> Dono Tesla </h3>
-                        <p> Fundador Tesla </p>
+                        <h2> Ramon Rocha </h2>
+                        <h3> UX Designer </h3>
+                        <p> Instructor at SmartCode </p>
                     </div>
-                  </div>
+
+                    <div class="col-md-3 profile-pic text-center">
+                        <div class="img-box">
+                            <img src="images/edu.png" class="img-responsive">
+                                <ul>
+                                    <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                                    <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                                </ul>
+                        </div>
+                        <h2> Eduardo Franco </h2>
+                        <h3> CTO / Fundador </h3>
+                        <p> Instructor at SmartCode </p>
+                    </div>
+
+                    <div class="col-md-3 profile-pic text-center">
+                    <div class="img-box">
+                        <img src="images/andre.png" class="img-responsive">
+                            <ul>
+                                <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                                <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                                <a href="#"><li><i class="fa fa-instagram"></i></li></a>
+                            </ul>
+                    </div>
+                    <h2> André Komori </h2>
+                    <h3> UI Designer </h3>
+                    <p> Instructor at SmartCode </p>
                 </div>
-            </section>
+                
+                </div>
+            </div>
+        </section>
 
-            <section id="promo">
-              <div class="container">
-                  <p> Caso tenha alguma dúvida entre em contato. </p>
-                    <a href="#" class="btn btn-primary"> Contate-nos </a>
-              </div>
-            </section>
+        <section id="promo">
+            <div class="container">
+                <p> Caso tenha alguma dúvida entre em contato. </p>
+                <a href="#" class="btn btn-primary"> Contate-nos </a>
+            </div>
+        </section>
 
-            <section id="price">
-                <div class="container">
-                    <h1> Principais Produtos </h1>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="single-price">
-                                <div class="price-head">
-                                    <h2> Gratis </h2>
-                                    <p> $0/<span> mês </span></p>
-                                </div>
-                                <div class="price-content">
-                                    <ul>
-                                        <li> <i class="fa fa-check-circle"></i> 5GB Space </li>
-                                        <li> <i class="fa fa-check-circle"></i> 10GB Bandwidth </li>
-                                        <li> <i class="fa fa-times-circle"></i> 15 Email Account </li>
-                                        <li> <i class="fa fa-times-circle"></i> Unlimited Domain </li>
-                                        <li> <i class="fa fa-times-circle"></i> Unlimited Support </li>
-                                    </ul>
-                                </div>
-                                <div class="price-button">
-                                    <a class="buy-btn" href="#"> Garanta Já </a>
-                                </div>
+        <section id="price">
+            <div class="container">
+                <h1> Principais Produtos </h1>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="single-price">
+                            <div class="price-head">
+                                <h2> Gratis </h2>
+                                <p> $0/<span> mês </span></p>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="single-price">
-                              <div class="price-head">
-                                  <h2> Plano de Entrada </h2>
-                                  <p> $10/<span> mês </span></p>
-                              </div>
-                              <div class="price-content">
-                                  <ul>
-                                      <li> <i class="fa fa-check-circle"></i> 10GB Space </li>
-                                      <li> <i class="fa fa-check-circle"></i> 100GB Bandwidth </li>
-                                      <li> <i class="fa fa-check-circle"></i> 15 Email Account </li>
-                                      <li> <i class="fa fa-times-circle"></i> Unlimited Domain </li>
-                                      <li> <i class="fa fa-times-circle"></i> Unlimited Support </li>
-                                  </ul>
-                              </div>
-                              <div class="price-button">
-                                  <a class="buy-btn" href="#"> Compre Agora </a>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="single-price">
-                              <div class="price-head">
-                                  <h2> Plano Intermediário </h2>
-                                  <p> $50/<span> mês </span></p>
-                              </div>
-                              <div class="price-content">
-                                  <ul>
-                                      <li> <i class="fa fa-check-circle"></i> 20GB Space </li>
-                                      <li> <i class="fa fa-check-circle"></i> 200GB Bandwidth </li>
-                                      <li> <i class="fa fa-check-circle"></i> 15 Email Account </li>
-                                      <li> <i class="fa fa-check-circle"></i> Unlimited Domain </li>
-                                      <li> <i class="fa fa-times-circle"></i> Unlimited Support </li>
-                                  </ul>
-                              </div>
-                              <div class="price-button">
-                                  <a class="buy-btn" href="#"> Compre Agora </a>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="col-md-3">
-                          <div class="single-price">
-                              <div class="price-head">
-                                  <h2> Plano Avançado </h2>
-                                  <p> $100/<span> mês </span></p>
-                              </div>
-                              <div class="price-content">
-                                  <ul>
-                                      <li> <i class="fa fa-check-circle"></i> 100GB Space </li>
-                                      <li> <i class="fa fa-check-circle"></i> 1000GB Bandwidth </li>
-                                      <li> <i class="fa fa-check-circle"></i> 15 Email Account </li>
-                                      <li> <i class="fa fa-check-circle"></i> Unlimited Domain </li>
-                                      <li> <i class="fa fa-check-circle"></i> Unlimited Support </li>
-                                  </ul>
-                              </div>
-                              <div class="price-button">
-                                  <a class="buy-btn" href="#"> Compre Agora </a>
-                              </div>
-                          </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li> <i class="fa fa-check-circle"></i> 5GB Space </li>
+                                    <li> <i class="fa fa-check-circle"></i> 10GB Bandwidth </li>
+                                    <li> <i class="fa fa-times-circle"></i> 15 Email Account </li>
+                                    <li> <i class="fa fa-times-circle"></i> Unlimited Domain </li>
+                                    <li> <i class="fa fa-times-circle"></i> Unlimited Support </li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="#"> Garanta Já </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <section id="testimonials">
-                <div class="container">
-                    <h1> Depoimentos </h1>
-                    <p class="text-center"> Descrição de opiniões de clientes que ja receberam nossos produtos / serviços. </p>
-                    <div class="row">
-                        <div class="col-md-4 text-center">
-                            <div class="profile">
-                                <img src="images/depoimento1.jpg" class="user">
-                                <blockquote> Empresa totalmente criativa e inovadora, caso precisem terão 100% de meu apoio! </blockquote>
-                                <h3> Joe Biden <span> Futuro Presidente dos EUA </span></h3>
+                    <div class="col-md-3">
+                        <div class="single-price">
+                            <div class="price-head">
+                                <h2> Plano de Entrada </h2>
+                                <p> $10/<span> mês </span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li> <i class="fa fa-check-circle"></i> 10GB Space </li>
+                                    <li> <i class="fa fa-check-circle"></i> 100GB Bandwidth </li>
+                                    <li> <i class="fa fa-check-circle"></i> 15 Email Account </li>
+                                    <li> <i class="fa fa-times-circle"></i> Unlimited Domain </li>
+                                    <li> <i class="fa fa-times-circle"></i> Unlimited Support </li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="#"> Compre Agora </a>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <div class="profile">
-                                <img src="images/depoimento2.jpg" class="user">
-                                <blockquote> Empresa totalmente criativa e inovadora, caso precisem terão 100% de meu apoio! </blockquote>
-                                <h3> Jair Bolsonaro <span> Presidente do Brasil </span></h3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-price">
+                            <div class="price-head">
+                                <h2> Plano Intermediário </h2>
+                                <p> $50/<span> mês </span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li> <i class="fa fa-check-circle"></i> 20GB Space </li>
+                                    <li> <i class="fa fa-check-circle"></i> 200GB Bandwidth </li>
+                                    <li> <i class="fa fa-check-circle"></i> 15 Email Account </li>
+                                    <li> <i class="fa fa-check-circle"></i> Unlimited Domain </li>
+                                    <li> <i class="fa fa-times-circle"></i> Unlimited Support </li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="#"> Compre Agora </a>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <div class="profile">
-                                <img src="images/depoimento3.jpg" class="user">
-                                <blockquote> Empresa totalmente criativa e inovadora, caso precisem terão 100% de meu apoio! </blockquote>
-                                <h3> Alok <span> DJ Eletrônico </span></h3>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="single-price">
+                            <div class="price-head">
+                                <h2> Plano Avançado </h2>
+                                <p> $100/<span> mês </span></p>
+                            </div>
+                            <div class="price-content">
+                                <ul>
+                                    <li> <i class="fa fa-check-circle"></i> 100GB Space </li>
+                                    <li> <i class="fa fa-check-circle"></i> 1000GB Bandwidth </li>
+                                    <li> <i class="fa fa-check-circle"></i> 15 Email Account </li>
+                                    <li> <i class="fa fa-check-circle"></i> Unlimited Domain </li>
+                                    <li> <i class="fa fa-check-circle"></i> Unlimited Support </li>
+                                </ul>
+                            </div>
+                            <div class="price-button">
+                                <a class="buy-btn" href="#"> Compre Agora </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="contact">
-                <div class="container">
-                    <h1> Entre em Contato </h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <form class="contact-form">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nome">
-                                </div>
-                                <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="Telefone">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="4" placeholder="Mensagem"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary"> Enviar Mensagem </button>
-                            </form>
+        <section id="testimonials">
+            <div class="container">
+                <h1> Depoimentos </h1>
+                <p class="text-center"> Descrição de opiniões de clientes que ja receberam nossos produtos / serviços. </p>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <div class="profile">
+                            <img src="images/marcos.png" class="user">
+                            <blockquote> Empresa totalmente criativa e inovadora, caso precisem terão 100% de meu apoio! </blockquote>
+                            <h3> Marcos Rocha <span> Instructor of Tqualy </span></h3>
                         </div>
-                        <div class="col-md-6 contact-info">
-                            <div class="follow"><b>Endereço:</b> <i class="fa fa-map-marker"></i> Rua Tamandaré, 79 / Carpe Dien </div>
-                            <div class="follow"><b>Telefone:</b> <i class="fa fa-phone"></i> (41)99266-4332 </div>
-                            <div class="follow"><b>Email:</b> <i class="fa fa-envelope-o"></i> andrekomori28@gmail.com </div>
-                            <div class="follow"><label><b>Redes Sociais:</b></label>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-google-plus"></i></a>
-                            </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="profile">
+                            <img src="images/zenere.png" class="user-zen">
+                            <blockquote> Empresa totalmente criativa e inovadora, caso precisem terão 100% de meu apoio! </blockquote>
+                            <h3> Eduardo Zenere <span> CTO of Tqualy </span></h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="profile">
+                            <img src="images/thiago.png" class="user">
+                            <blockquote> Empresa totalmente criativa e inovadora. Graças a eles, tenho um ótimo desempenho no vava. </blockquote>
+                            <h3> Tiago <span> Jogador de Valorant </span></h3>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="footer">
-                <div class="container text-center">
-                    <p> Made by Komori Corporation </p>
+        <section id="contact">
+            <div class="container">
+                <h1> Entre em Contato </h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Telefone">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" placeholder="Mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary"> Enviar Mensagem </button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 contact-info">
+                        <div class="follow"><b>Endereço:</b> <i class="fa fa-map-marker"></i> Rua Tamandaré, 79 / Carpe Dien </div>
+                        <div class="follow"><b>Telefone:</b> <i class="fa fa-phone"></i> (41)99266-4332 </div>
+                        <div class="follow"><b>Email:</b> <i class="fa fa-envelope-o"></i> andrekomori28@gmail.com </div>
+                        <div class="follow"><label><b>Redes Sociais:</b></label>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+
+        <div id="map"></div>
+
+        <section id="footer">
+            <div class="container text-center">
+                <p> Made by Smartcode Corporation </p>
+            </div>
+        </section>
     </body>
 
 </html>

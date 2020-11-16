@@ -102,11 +102,5 @@ function fLocalEventosCLick() {
         $("#email").val("");
         $("#senha").val("");
         $("#confirma_senha").val("");
-    }
-    
-
-    
+    }  
 });
-
-
-
