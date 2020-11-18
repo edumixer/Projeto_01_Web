@@ -1,8 +1,49 @@
-body {
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+
+#nav-bar ul li a:hover{
+    color: #007bff;
+}
+
+.navbar{
+    background: #fff;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.nav-link{
+    color: #555;
+    font-weight: 600;
+    font-size: 16px;
+}
+/* body {
     margin: 0 auto;
     width: 1000px;
     display: flex;
     flex-flow: column;
+    align-items: center;
+} */
+#form_cadastro {
+    display: flex;
     align-items: center;
 }
 h1 {
@@ -22,9 +63,14 @@ label {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 0.8em;
+    margin-right: 360px;
+}
+.menor_label {
+    margin-right: 430px;
 }
 
 form {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

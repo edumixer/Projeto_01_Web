@@ -241,6 +241,12 @@ h1::after{
     font-size: 38px;
 }
 
+#video {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
 #price {
     padding: 40px 0;
     background: #efefef;
@@ -403,23 +409,28 @@ blockquote{
 }
 
 blockquote::before{
-    content: '\93';
+    content: '"';
     font-size: 50px;
     color: #007bff;
     position: relative;
     line-height: 20px;
     bottom: -15px;
     right: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
 blockquote::after{
-    content: '\94';
+    content: '"';
     font-size: 50px;
     color: #007bff;
     position: relative;
     line-height: 20px;
     bottom: -15px;
     left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    transform: rotate(180deg);
 }
 
 .profile:hover{
@@ -459,6 +470,18 @@ textarea {
     margin: 15px;
 }
 
+i.fa.fa-tv {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+i.fa.fa-gamepad {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
 .contact-info .fa {
     margin: 10px;
     color: #007bff;
@@ -475,4 +498,5 @@ textarea {
     background: #333;
     color: #fff;
     padding: 12px;
+    height: 50px;
 }

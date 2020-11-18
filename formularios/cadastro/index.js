@@ -1,14 +1,14 @@
-var dados = [];
-var banco = window.localStorage;
+// var dados = [];
+// var banco = window.localStorage;
 
 $(document).ready(function() {
     fLocalEventosCLick();
-    var db = banco.getItem("dadosUsuarios")
-    if( db !== null) {
-        dados = JSON.parse(db);   
-    } else {
-        dados = [];
-    }
+    // var db = banco.getItem("dadosUsuarios")
+    // if( db !== null) {
+    //     dados = JSON.parse(db);   
+    // } else {
+    //     dados = [];
+    // }
 function fLocalEventosCLick() {
     $("#salvar-formulario").click(function() {
 
@@ -19,19 +19,21 @@ function fLocalEventosCLick() {
 
         fLocalValidaSenha();
         
-        var aux = {};
-        aux.nome = $("#nome").val();
-        aux.email = $("#email").val();
-        aux.senha =  $("#senha").val();
-        aux.confirma_senha =  $("#confirma_senha").val();
+        // var aux = {};
+        // aux.nome = $("#nome").val();
+        // aux.email = $("#email").val();
+        // aux.senha =  $("#senha").val();
+        // aux.confirma_senha =  $("#confirma_senha").val();
         
-        dados.push(aux);
+        // dados.push(aux);
         
-        banco.setItem("dadosUsuarios", JSON.stringify(dados));
+        // banco.setItem("dadosUsuarios", JSON.stringify(dados));
         
         if (fLocalValidaTodos()) {
-            fLocalLimpaCampos();
-            window.location.href = "../login/index.html"
+            document.querySelector("#form_cadastro").submit();
+            // fLocalLimpaCampos();
+            // window.location.href = "../login/index.php"
+            return true;
         }
 
         return false;
@@ -97,6 +99,3 @@ function fLocalEventosCLick() {
         $("#confirma_senha").val("");
     }
 });
-
-
-
