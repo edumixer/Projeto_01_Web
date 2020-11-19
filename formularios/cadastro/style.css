@@ -73,7 +73,7 @@ h1 {
     padding-top: 100px;
 }
 
-label { 
+label {
     margin-top: 1rem;
     margin-bottom: 4px;
     font-family: 'Roboto', sans-serif;
@@ -121,7 +121,7 @@ input {
 }
 .campo-errado {
     border-bottom: solid 1px red;
-    
+
 }
 .salvar {
     border: 0;
@@ -163,7 +163,7 @@ input {
     align-items: center;        /* Centralizando o icone */
     position: relative;
 }
-.svg_cadeado{ 
+.svg_cadeado{
     border: 0;
     height: 20px;
     position: absolute;
@@ -179,4 +179,5 @@ input {
     color: #fff;
     padding: 12px;
     height: 50px;
+    margin-top: 365px;
 }
