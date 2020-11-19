@@ -3,7 +3,23 @@
     top: 0;
     z-index: 10;
 }
-
+h6 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    color: #007bff;
+    /* text-shadow: 9px 12.5px  #ff00ea; */
+}
+h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    font-style: italic;
+    color: #ff00ea;
+    margin-left: -150px;
+    margin-top: 28px;
+}
 .navbar-brand img{
     height: 40px;
     padding-left: 30px;
@@ -23,7 +39,7 @@
 }
 
 .navbar{
-    background: #fff;
+    background: #efefef;
 }
 
 .navbar-toggler{
@@ -157,4 +173,10 @@ input {
     display: flex;
     align-items: center;        /* Centralizando o icone */
     position: relative;
+}
+#footer{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+    height: 50px;
 }

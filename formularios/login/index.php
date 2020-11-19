@@ -29,6 +29,8 @@
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="../../home/images/logo.png"></a>
+            <h6>Buscando a inovação</h6>
+            <h5>Alcançando a perfeição</h5>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -83,11 +85,17 @@
         <input name="senha" type="password" id="senha" class="campo-formulario" />
         </div>
 
+        <div class="botoes">       
+            <button id="salvar-formulario" class="salvar">LOG IN</button>
+            <button id="cadastrar-formulario" class="cadastrar">SIGN UP</button>
+        </div>
     </form>
-            
-    <div class="botoes">       
-        <button id="salvar-formulario" class="salvar">LOG IN</button>
-        <button id="cadastrar-formulario" class="cadastrar">SIGN UP</button>
-    </div>
+
+    <section id="footer">
+        <div class="container text-center">
+            <p> Made by Smartcode Corporation </p>
+        </div>
+    </section>
+    
 </body>
 </html>
