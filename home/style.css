@@ -155,6 +155,7 @@ body .progress {
 
 .services .col-md-3:hover{
     background: #007bff;
+    border-radius: 16px;
     cursor: pointer;
     transition: 0.7s;
 }
