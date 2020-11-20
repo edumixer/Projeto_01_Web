@@ -7,6 +7,37 @@
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
+      <script>
+        $(document).ready(function () {
+          var banco = window.localStorage;
+          var carrinho = JSON.parse(banco.getItem("carrinho"));
+          console.log(carrinho);
+          for (let c = 0; c < carrinho.length; c++) {
+            $("#total_valor").html("224,89")
+            $("#subtotal_valor").html(carrinho[c].valor);
+            document.querySelector("#tabela").insertAdjacentHTML("beforeend",`<tr>
+            <td>
+            <div class="carrinho-info">
+              <img src="`+ carrinho[c].url_image + `" width="200px" height="200">
+              <div>
+                <p>`+ carrinho[c].nome +`</p>
+                <small>`+ carrinho[c].valor +`</small>
+                <br>
+                <a href="javascript:remover_produto()">Remover</a>
+              </div>
+            </div>
+          </td>
+          <td>`+ carrinho[c].quantidade +`</td>
+          <td> `+ carrinho[c].valor +`</td>
+          </tr>`)
+          }
+          
+        })
+        function remover_produto() {
+          window.localStorage.setItem("carrinho", "[]");
+          window.location.reload();
+        }
+      </script>
       <script type="text/javascript" src="./script.js"></script>
 
     </head>
@@ -33,61 +64,20 @@
 
     <!--carrinho itens-->
     <div class="small-container pagina-carrinho">
-      <table>
+      <table id="tabela">
         <tr>
           <th>Produto</th>
           <th>Quantidade</th>
-          <th>Subtotal</th>
+          <th >Subtotal</th>
         </tr>
-        <tr>
-          <td>
-            <div class="carrinho-info"</div>
-              <img src="../produtos_main/images_produtos/headsethusky.png" width="200px" height="200">
-              <div>
-                <p>Headset Gamer Husky Snow</p>
-                <small>Preço: R$ 205,99</small>
-                <br>
-                <a href="">Remover</a>
-              </div>
-          </td>
-          <td><input type="number" value="1"></td>
-          <td> R$ 205,00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="carrinho-info"</div>
-              <img src="../produtos_main/images_produtos/tecladoc3tech.png" width="200px" height="200">
-              <div>
-                <p>Teclado C3Tech</p>
-                <small>Preço: R$ 19,90</small>
-                <br>
-                <a href="">Remover</a>
-              </div>
-          </td>
-          <td><input type="number" value="1"></td>
-          <td> R$ 19,00</td>
-        </tr>
-        <tr>
-          <td>
-            <div class="carrinho-info"</div>
-              <img src="../produtos_main/images_produtos/mouselogitech.png" width="200px" height="200">
-              <div>
-                <p> Mouse Logitech</p>
-                <small>Preço: R$ 165,99</small>
-                <br>
-                <a href="">Remover</a>
-              </div>
-          </td>
-          <td><input type="number" value="1"></td>
-          <td> R$ 165,99</td>
-        </tr>
+        
       </table>
 
       <div class="preco-total">
         <table>
           <tr>
             <td>Subtotal</td>
-            <td>617,97</td>
+            <td id="subtotal_valor">0,00</td>
           </tr>
           <tr>
             <td>Frete</td>
@@ -95,7 +85,7 @@
           </tr>
           <tr>
             <td>Total</td>
-            <td>636,87</td>
+            <td id="total_valor">0,00</td>
           </tr>
         </table>
       </div>

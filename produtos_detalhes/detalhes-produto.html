@@ -5,6 +5,22 @@
       <link rel="stylesheet" href="style.css">
       <script type="text/javascript" src="../js/jquery-3.5.1.js"></script>
       <script type="text/javascript" src="./script.js"></script>
+      <script> 
+        $(document).ready(function() {
+          $("#add_produto").click( function ()  {
+            console.log("botao");
+            if (document.querySelector("#cor_produto").value != '' && document.querySelector("#quantidade_produto").value > 0) {
+              var dados = [];
+              var banco = window.localStorage;
+
+              banco.setItem("carrinho", JSON.stringify([{"nome": "Headset Gamer Husky Snow", "valor": "R$ 205,00", "cor": document.querySelector("#cor_produto").value, "quantidade": document.querySelector("#quantidade_produto").value, "url_image": "http://localhost/produtos_main/images_produtos/headsethusky.png"}]))
+              window.location.href = "../carrinho/carrinho.html";
+              
+            }
+            else alert('Selecione uma cor e uma quantidade maior que 0!')
+          })
+        })
+      </script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -58,15 +74,15 @@
             <p>Produtos / Headset</p>
             <h1> Headset Gamer Husky Snow </h1>
             <h4> R$ 205,00 </h4>
-            <select>
+            <select id="cor_produto">
               <option>Selecione a cor</option>
               <option>Azul</option>
               <option>Preto</option>
               <option>Vermelho</option>
               <option>Verde</option>
             </select>
-            <input type="quantidade" value="1">
-            <a class="btn">Adicionar ao carrinho</a>
+            <input id="quantidade_produto" value="1">
+            <a class="btn" id="add_produto">Adicionar ao carrinho</a>
 
             <h3>Detalhes do produto <i class="fa fa-indent"></i></h3> <br>
             <p>A escolha do Headset é essencial para quem está em busca de melhor performance no game e um som perfeito durante as disputas dos seus jogos favoritos. Com o Headset Gamer Husky Snow você tem acesso à imersão do som surround 7.1 (virtual), ao mesmo tempo em que fortalece o seu setup com o detalhe primoroso do LED. O Husky Snow oferece alto-falantes potentes e microfone preciso e flexível. Você ouvirá cada passo de seus adversários durante os jogos online como, FreeFire, Fortnite e CS:GO, ao mesmo tempo em que se comunica com total clareza com os seus parceiros de batalha.</p>
